@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1.4rem;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+.aside { 
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.centered { 
+    width: 100%;
+    height: calc(100% - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.centered_row {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav {
+    height: 70px;
+}
+
+.main {
+    padding: 30px;
+    margin-left: 50%; 
+    width: 50%;
+}
+
+.indented {
+    margin: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 10px;
+}
+
+.full_width {
+    width: 100%;
+}
+
+.bigger_font_size{
+    font-size: 1.3rem;
+}
+
+.space_between {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.no_default_styles {
+    background-color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    border: none;
+    list-style-type: none;
+    padding: 10px;
+    text-align: center;
+}
+
+.peach_bottom_border {
+    border-bottom: 2px solid #FBCEB1;
+}
+
+.peach_background_color {
+    background-color: #FBCEB1;
+}
+
+.gray_background_color {
+    background-color: rgb(237, 236, 236);
+    border: 1px solid #FBCEB1;
+}
+
+.hidden{ 
+    display: none;
+}
+
+
+@media screen and (max-width: 1250px) {
+    * {
+        font-size: 1.6rem;
+    }
+
+    .aside { 
+        position: relative;
+        width: 100%;
+    }
+
+    .form {
+        margin-top: 20px;
+    }
+
+    .main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    * { font-size: 1.4rem; }
+}
+
+@media screen and (max-width: 680px) {
+    * { font-size: 1.3rem; }
+    .lesson {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    * { font-size: 1.2rem; }
+
+    .indented {
+        margin: 5px;
+        padding: 2px;
+    }
+}

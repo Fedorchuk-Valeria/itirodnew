@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Update lesson</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="UpdateLesson.css"> 
+  </head>
+  <body>
+    <header class="heder centered peach_background_color">
+      <p class="bigger_font_size">Update lesson</p>
+    </header>
+    <section class="centered section">
+      <form class="form gray_background_color">
+        <p class="bigger_font_size">Enter data to update</p>
+
+        <div class="space_between">
+          <label for="dateInput">Date</label>
+          <input class="no_default_styles indented" id="dateInput" type="datetime-local">
+        </div>
+
+        <div class="space_between" id="moduleDiv">
+            <label for="moduleSelect">Module</label>
+            <select class="no_default_styles" id="moduleSelect"> </select>
+        </div>
+
+        <div class="space_between hidden" id="themeDiv">
+            <label for="themeSelect">Theme</label>
+            <select class="no_default_styles" id="themeSelect"> </select>
+        </div>
+
+        <button class="no_default_styles peach_background_color bigger_font_size" id="UpdateButton" type="submit">Update</button>
+      </form>
+    </section>
+
+    <script type="module" src="./UpdateLesson.js"> </script>
+  </body>
+</html>

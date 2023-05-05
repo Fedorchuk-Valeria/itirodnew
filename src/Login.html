@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Login</title>
+    <link rel="stylesheet" href="./Login.css"> 
+    <!-- <script type="module" src="./firebaseInitializer.js"></script> -->
+  </head>
+  <body class="peach_background_color centered">
+    <form class="gray_background_color centered indented" action="./MainPage.html">        
+      <p id="not_found"></p>
+      <p class="bigger_font_size">Login</p>
+
+      <div class="space_between">
+        <label for="emailInput">Email</label>
+        <input class="peach_bottom_border no_default_styles indented" id="emailInput"/>
+      </div>
+
+      <div class="space_between">
+        <label for="passwordInput">Password</label>
+        <input class="peach_bottom_border no_default_styles indented" id="passwordInput"/>
+      </div>
+
+      <button class="bigger_font_size no_default_styles peach_background_color" id="loginButton" type="submit">Sign in</button>
+    </form>
+    <script type="module" src="./Login.js"> </script>
+  </body>
+</html>

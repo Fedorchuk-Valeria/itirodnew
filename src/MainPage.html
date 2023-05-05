@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Main Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./MainPage.css"> 
+  </head>
+  <body>
+    <aside class="aside">
+        <nav class="nav space_between peach_background_color">
+            <button class="no_default_styles" onclick="document.location='./Modules.html'">Modules</button>
+            <button class="no_default_styles" onclick="document.location='./Timetable.html'">Full timetable</button>
+        </nav>
+        <section class="centered">
+            <form class="full_width indented centered_row gray_background_color">
+                <p id="error"></p>
+                <p>Add new lesson</p>
+
+                <div class="space_between">
+                    <label for="dateInput">Date</label>
+                    <input class="no_default_styles indented" id="dateInput" type="datetime-local">
+                </div>
+
+                <div class="space_between">
+                    <label for="typeSelect">Type</label>
+                    <select class="no_default_styles"  id="typeSelect">
+                        <option>regular</option>
+                        <option>additional</option>
+                    </select>
+                </div>
+
+                <div class="space_between">
+                    <label for="ageSelect">Age</label>
+                    <select class="no_default_styles" id="ageSelect">
+                        <option>Young group</option>
+                        <option>Middle group</option>
+                        <option>Senior group</option>
+                    </select>
+                </div>
+
+                <div class="space_between hidden" id="moduleDiv">
+                    <label for="moduleSelect">Module</label>
+                    <select class="no_default_styles" id="moduleSelect"> </select>
+                </div>
+
+                <div class="space_between hidden" id="themeDiv">
+                    <label for="themeSelect">Theme</label>
+                    <select class="no_default_styles" id="themeSelect"> </select>
+                </div>
+
+                <button class="no_default_styles peach_background_color" type="submit" id="addLessonButton">Add</button>
+            </form>
+        </section>
+    </aside>
+
+    <main class="main centered_row"> 
+        <h1>Timetable</h1>
+        <ul class="centered_row full_width" id="lessonContainer"></ul>
+    </main>
+
+    <script type="module" src="./MainPage.js"> </script>
+  </body>
+</html>

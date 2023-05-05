@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Modules</title>
+    <link rel="stylesheet" href="Modules.css"> 
+  </head>
+  <body>
+    <aside class="aside">
+        <header class="header peach_background_color centered">
+            <p class="bigger_font_size">Modules</p>
+        </header>
+        <section class="form_container centered_row">
+            <form class="form centered_row gray_background_color">
+                <p class="bigger_font_size">Add new module</p>
+    
+                <div class="space_between">
+                    <label for="moduleInput">Module name</label>
+                    <input class="no_default_styles peach_bottom_border indented full_width" id="moduleInput">
+                </div>
+    
+                <div class="space_between">
+                    <label for="themeInput">Lesson name</label>
+                    <input class="no_default_styles peach_bottom_border indented  " id="themeInput">
+                    <button class="no_default_styles peach_background_color" id="addThemeButton">Add Theme</button>
+                </div>
+
+                <p>themes:</p>
+                <div id="themeContainer"> </div>
+
+                <button 
+                    class="no_default_styles peach_background_color indented"
+                    type="submit"
+                    id="addModuleButton"
+                > Add </button>
+            </form>
+        </section>
+    </aside>
+
+    <main class="main centered_row"> 
+        <ul class="centered_row full_width indented" id="moduleContainer"> </ul>
+    </main>
+
+    <script type="module" src="./Modules.js"> </script>
+  </body>
+</html>

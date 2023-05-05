@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-size: 1.4rem;
+}
+
+.aside { 
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    z-index: 1;
+}
+
+.header {
+    width: 100%;
+    height: 60px; 
+}
+
+.centered { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centered_row {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form_container {
+    width: 100%;
+    height: calc(100% - 60px);
+    padding: 30px;
+}
+
+.form {
+    height: 500px;
+    width: 100%;
+    padding: 10px;
+}
+
+.main {
+    margin-left: 50%; 
+    width: 50%;
+    padding: 20px;
+}
+
+.full_width {
+    width: 100%;
+}
+
+.indented {
+    margin: 10px;
+    padding: 10px;
+}
+
+.no_default_styles {
+    background-color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    border: none;
+    list-style-type: none;
+    padding: 10px;
+    text-align: center;
+}
+
+.peach_bottom_border {
+    border-bottom: 2px solid #FBCEB1;
+}
+
+.peach_background_color {
+    background-color: #FBCEB1;
+}
+
+.gray_background_color {
+    background-color: rgb(237, 236, 236);
+    border: 1px solid #FBCEB1;
+}
+
+.left-border {
+    border-left: 1px solid #FBCEB1;
+    height: 100%;
+}
+
+.top_border {
+    border-top: 1px solid #FBCEB1;
+    height: 100%;
+}
+
+.full_width {
+    width: 100%;
+}
+
+.bigger_font_size{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.space_between {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.space_around {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .aside { 
+        position: relative;
+        width: 100%;
+    }
+
+    .form {
+        margin-top: 20px;
+    }
+
+    .main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    * { font-size: 1.25rem; }
+}
+@media screen and (max-width: 450px) {
+    * { font-size: 1.15rem; }
+}
