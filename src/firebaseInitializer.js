@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
-import {getDatabase, set, get, update, remove, ref, child, onValue} from 
+import {getDatabase, set, get, update, remove, push, ref, query, limitToLast, child, onValue} from 
 "https://www.gstatic.com/firebasejs/9.21.0/firebase-database.js";
 
 const firebaseConfig = {
@@ -16,6 +16,6 @@ const app = initializeApp(firebaseConfig);
 const database = getDatabase();
 
 export default {
-    getDatabase, set, get, update, remove, push, ref, query, limitToLast, child, onValue
+    app, getDatabase, set, get, update, remove, push, ref, query, limitToLast, child, onValue
 }
 
